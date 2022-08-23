@@ -287,7 +287,11 @@
 						<div class="inner medium">
 							<h2>Get in touch</h2>
 							<form method="post" action="#">
-								<div class="fields">
+								<form method="post" name="submitmessage" netlify-honeypot="bot-field" action="submission-confirmation.html#contact" netlify>
+ 							 <p style="display:none;">
+    							 <label>nothing<input name="bot-field"></label>
+  								</p>
+  							<div class="fields">
 									<div class="field half">
 										<label for="name">Name</label>
 										<input type="text" name="name" id="name" value="" />
@@ -301,6 +305,7 @@
 										<textarea name="message" id="message" rows="6"></textarea>
 									</div>
 								</div>
+								
 								<ul class="actions special">
 									<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
 								</ul>
